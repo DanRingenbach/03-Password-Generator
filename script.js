@@ -6,7 +6,7 @@ function generatePassword() {
   var lowerLetters = confirm("Do you want lowercase letters in you password?")
   var numbers = confirm("Do you want numbers in your password?")
   var spChar = confirm("Do you want special characters in your password?")
-  var passLength = prompt("How long do you want your password to be?")
+  var passLength = prompt("How many characters do you want your password to be?")
   var passwordIndex = []
   var password = []
   var index;
@@ -47,8 +47,8 @@ function generatePassword() {
 
   passwordIndex.join('')
 
-  console.log(passwordIndex)
-  // passwordIndex.split('')
+  
+  
 
   passLength = passLength - password.length
 
@@ -59,13 +59,12 @@ function generatePassword() {
     password.push(passwordItem)
 
 
-    console.log(passwordItem)
-    console.log(password)
+    
+    
 
     passLength--;
   }
-  console.log(password)
-  console.log(passwordIndex)
+  
   password = (password.join(''))
 
   return password
